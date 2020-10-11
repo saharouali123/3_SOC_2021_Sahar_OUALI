@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<livre>
+  <titre>titre du livre</titre>
+  <sections>
+    <section>
+      <titre>Section 1</titre>
+      <chapitres>
+        <chapitre>
+          <titre>chapitre 1</titre>
+          <parahraphes>
+            <parahraphe>parahraphe 1</parahraphe>
+            <parahraphe>parahraphe 2</parahraphe>
+          </parahraphes>
+        </chapitre>
+        <chapitre>
+          <titre>chapitre 2</titre>
+          <parahraphes>
+            <parahraphe>parahraphe 1</parahraphe>
+            <parahraphe>parahraphe 2</parahraphe>
+          </parahraphes>
+        </chapitre>
+      </chapitres>
+    </section>
+    <section>
+      <titre>Section 2</titre>
+      <chapitres>
+        <chapitre>
+          <titre>chapitre 1</titre>
+          <parahraphes>
+            <parahraphe>parahraphe 1</parahraphe>
+            <parahraphe>parahraphe 2</parahraphe>
+          </parahraphes>
+        </chapitre>
+        <chapitre>
+          <titre>chapitre 2</titre>
+          <parahraphes>
+            <parahraphe>parahraphe 1</parahraphe>
+            <parahraphe>parahraphe 2</parahraphe>
+          </parahraphes>
+        </chapitre>
+      </chapitres>
+    </section>
+  </sections>
+  <auteurs>
+    <auteur>
+      <prenom>Victor</prenom>
+      <nom>Hugo</nom>
+    </auteur>
+    <auteur>
+      <prenom>Jean-Jacques</prenom>
+      <nom>Rousseau</nom>
+    </auteur>
+  </auteurs>
+</livre>

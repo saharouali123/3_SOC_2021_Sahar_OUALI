@@ -1,0 +1,53 @@
+<p:livre titre="Mon livre" xmlns:p="http://www.masociete.com" xmlns:pp="http://www.monentreprise.com">
+  <p:titre>titre du livre</p:titre>
+  <p:sections>
+    <p:section>
+      <p:titre>Section 1</p:titre>
+      <p:chapitres>
+        <p:chapitre>
+          <p:titre>chapitre 1</p:titre>
+          <p:parahraphes>
+            <p:parahraphe>parahraphe 1</p:parahraphe>
+            <p:parahraphe>parahraphe 2</p:parahraphe>
+          </p:parahraphes>
+        </p:chapitre>
+        <p:chapitre>
+          <p:titre>chapitre 2</p:titre>
+          <p:parahraphes>
+            <p:parahraphe>parahraphe 1</p:parahraphe>
+            <p:parahraphe>parahraphe 2</p:parahraphe>
+          </p:parahraphes>
+        </p:chapitre>
+      </p:chapitres>
+    </p:section>
+    <pp:section>
+      <pp:titre>Section 2</pp:titre>
+      <pp:chapitres>
+        <pp:chapitre>
+          <pp:titre>chapitre 1</pp:titre>
+          <pp:parahraphes>
+            <pp:parahraphe>parahraphe 1</pp:parahraphe>
+            <pp:parahraphe>parahraphe 2</pp:parahraphe>
+          </pp:parahraphes>
+        </pp:chapitre>
+        <pp:chapitre>
+          <pp:titre>chapitre 2</pp:titre>
+          <pp:parahraphes>
+            <pp:parahraphe>parahraphe 1</pp:parahraphe>
+            <parahraphe>parahraphe 2</parahraphe>
+          </pp:parahraphes>
+        </pp:chapitre>
+      </pp:chapitres>
+    </pp:section>
+  </p:sections>
+  <p:auteurs>
+    <p:auteur>
+      <p:prenom>Victor</p:prenom>
+      <p:nom>Hugo</p:nom>
+    </p:auteur>
+    <p:auteur>
+      <p:prenom>Jean-Jacques</p:prenom>
+      <p:nom>Rousseau</p:nom>
+    </p:auteur>
+  </p:auteurs>
+</p:livre>
