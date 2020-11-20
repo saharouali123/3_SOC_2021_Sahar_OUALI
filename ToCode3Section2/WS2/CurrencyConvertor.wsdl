@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://localhost/ToCode3Section2/WS2/ws2.php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="CurrencyConvertor" targetNamespace="http://localhost/ToCode3Section2/WS2/ws2.php">
+  <types>
+    <xsd:schema targetNamespace="http://localhost/ToCode3Section2/WS2/ws2.php">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    </xsd:schema>
+  </types>
+  <portType name="CurrencyConvertorPort">
+    <operation name="Conversion">
+      <input message="tns:ConversionIn"/>
+    </operation>
+  </portType>
+  <binding name="CurrencyConvertorBinding" type="tns:CurrencyConvertorPort">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="Conversion">
+      <soap:operation soapAction="http://localhost/ToCode3Section2/WS2/ws2.php#Conversion"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ToCode3Section2/WS2/ws2.php"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/ToCode3Section2/WS2/ws2.php"/>
+      </output>
+    </operation>
+  </binding>
+  <message name="ConversionIn">
+    <part name="amount" type="xsd:anyType"/>
+  </message>
+  <service name="CurrencyConvertorService">
+    <port name="CurrencyConvertorPort" binding="tns:CurrencyConvertorBinding">
+      <soap:address location="http://localhost/ToCode3Section2/WS2/ws2.php"/>
+    </port>
+  </service>
+</definitions>
